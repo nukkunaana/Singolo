@@ -1,0 +1,281 @@
+/*Адаптивность*/
+
+@media (min-width: 768px) {
+	.navbar-nav{
+	 margin: -1px; 
+	}
+
+	.navbar-toggle {
+	display: none;
+	}
+}
+
+
+@media (max-width: 1152px) {
+	.width_940 {
+		width: 75%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+
+@media (max-width: 1024px) {
+	.width_940 {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#select_categoryPortfolio a {
+		padding: 5px 14px;
+		font-size: 13px;
+		margin-bottom: 4px;
+		display: inline-block;
+	}
+
+
+	
+	#select_categoryPortfolio {
+		text-align: center;
+	}
+
+	.person .overlay-img-thumb {
+		font-size: 29px;
+	}
+
+}
+
+
+@media (max-width: 896px) {
+	
+	.service img{
+		display: none;
+	}
+
+	.service-txt-float-right {
+		width: 100%;
+	}
+
+	/*УМЕНЬШАЕМ РАЗМЕРЫ ХЭДЭРА*/
+	.nav-tabs > li.active > a,
+	.nav-tabs > li.active > a:hover,
+	.nav-tabs > li.active > a:focus {
+		border-bottom: none
+	}
+
+	#header {
+		height: 49px;
+	}
+
+	#logo {
+		margin: 5px 0 0;
+	}	
+
+	#header ul li {
+		margin-top: 28px;
+	}
+
+	#slider {
+		margin-top: 50px;
+	}
+}
+
+
+@media (max-width: 768px) {
+
+	.width_940 {
+		width: 85%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	/*убираем у бордер-топ, что у всплывающего меню, цвет*/
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form {
+		border:none; 
+	}
+	/*задаем БГцвет всплывающего меню*/
+	ul.nav.nav-tabs.navbar-nav {
+		background-color: #34363F;
+	}
+	
+	/*НАСТРАИВАЕМ ПАРАМЕТРЫ СПИСКАМ МЕНЮ*/
+	.navbar-nav {
+		margin: 0.5px -15px;
+	}
+
+	.nav-tabs > li {
+		margin-bottom: 5px;
+	}
+
+	#header ul li {
+		padding-left: 20px;
+	}
+
+	#header ul li:last-child {
+		padding-right: 20px;
+	}
+}
+
+
+@media (max-width: 588px) {
+	.width_940 {
+		width: 86%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+
+/*МЕНЯЕМ В БЛОКЕ ФОРМЫ*/
+@media (max-width: 555px) {
+	.information p {
+		margin: 0 0 0 3%;
+		width: 84%;
+	}
+}
+
+/*В БЛОКЕ СЕРВИС, ПОРТФОЛИО, ЭБАУТ, ФОРМЫ, ВСПЛЫВ. МЕНЮ, ФУТЕР*/
+@media (max-width: 528px) {
+	/*СЕРВИС*/
+	.service {
+		width: 46%;
+		margin-right: 3%;
+	}
+
+	.service_last {
+		margin-right: 3%;
+	}
+
+	/*ПОРТФОЛИО*/
+	.portfolio_img {
+		width: 32%;
+	}
+
+	/*ЭБАУТ*/
+	.person {
+		display: block;
+		width: 68%;
+		margin: 13px auto 34px;
+	}
+
+	.person_last {
+		margin-right: auto; 
+	}
+
+	.social_icon {
+		text-align: center;
+	}
+
+	.social_icon_float_right {
+		text-align: right;
+	}
+
+	.person .overlay-img-thumb {
+		font-size: 31px;
+	}
+
+	/*ФОРМЫ*/
+	#fields {
+		width: 100%;
+		display: block;
+		margin-bottom: 45px;
+	}
+
+	.contact_bottom {
+		margin-top: 0;
+	}
+
+	.contact {
+		width: 100%;
+		display: block;
+		margin: 28px 0 0 0;
+	}
+
+	.information {
+		margin: 15px 0 30px;
+	}
+
+	.information p {
+		width: 90%;
+	}
+	
+	/*ВСПЛЫВАЮЩЕЕ МЕНЮ СПИСКОМ */
+	.nav-tabs > li {
+ 		float: none; 
+ 	}
+
+ 	#header ul li:last-child {
+		padding-right: 30px;
+	}
+	/*ФУТЕР*/
+	.social_icon_float_right span{
+		margin-right: 9px;
+	}
+}
+
+
+/*ДЛЯ СОЦИАЛЬНЫХ КНОПОК ЧТОБЫ ВЛЕЗАЛИ*/
+@media (max-width: 450px) {
+	.social_icon_float_right {
+		text-align: center;
+	}
+
+	#footer {
+		padding-bottom: 20px;
+	}
+
+	#footer p {
+		margin-top: 13px;
+		text-align: center;
+		margin-bottom: 17px;
+		float: none;
+		display: block;
+	}
+}
+
+/*СЕРВИС, В ПОРТФОЛИО КАРТИНКИ (по 2 в ряд), ЭБАУТ*/
+@media (max-width: 400px) {
+	
+	/*СЕРВИС*/
+	.service {
+		width: 100%;
+		margin: 8px auto;
+	}
+
+	#services img {
+		margin: 14px 5% 0 1%;
+		width: 16%;
+		display: block;
+	}
+	
+	.service-txt-float-right {
+		width: 77%;
+		float: right;
+	}
+
+	.portfolio_img {
+		width: 48%;
+	}
+
+	.portfolio_img {
+		margin-top: 10px;
+	}
+
+	/*ЭБАУТ*/
+	.person {
+		width: 75%;
+	}
+}
+
+
+@media (max-width: 300px) {
+	.body_img {
+		text-align: center;
+	}
+
+	.portfolio_img {
+		width: 72%;
+	}
+}
