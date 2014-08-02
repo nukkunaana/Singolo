@@ -600,9 +600,9 @@ textarea[type="text"]::-webkit-input-placeholder {
 }
 
 .error {
-	/*visibility: collapse;*/
 	display: none;
 	margin: -13px 0 12px 17px;
+	color: #000;
 }
 
 /*Изменение пути к папке со спрайтом*/
