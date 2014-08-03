@@ -89,8 +89,8 @@ a {
   background-color: #303441!important;
   border: none;
   border-bottom: 1px dotted #eb5055;
-  -webkit-transition: color 0.8s 0.1s;
- 		  transition: color 0.8s 0.1s;
+  -webkit-transition: color 0.8s;
+ 		  transition: color 0.8s;
 }
 
 .nav-tabs {
@@ -281,9 +281,11 @@ h3 {
 	position: relative;
 }
 
-/*TODO: add top & left*/
 .hover-wrap {
 	position: absolute;
+	top: 0;
+	left: 0;
+    z-index: 2;
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -310,7 +312,8 @@ h3 {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	left: 0%;
+	top: 0;
+	left: 0;
 	background: #DE5E60;
 	opacity: 0.8;
 }
@@ -318,6 +321,7 @@ h3 {
 .overlay-img-thumb {
 	position: absolute;
 	top: 50%;
+	left: 50%; 
 	margin-top: -16px;
 	margin-left: -16px;
 	color: #FFF;
@@ -466,7 +470,6 @@ h3 {
 }
 
 /*как реагирует кнопка "Send"*/
-/*TODO: прогнать box-shadow и остальные CSS3 через тот сайт*/
 #contact input[type="submit"]:hover {
 	color: #9E3639;
 	background-color: #f2f2f2;
@@ -600,9 +603,12 @@ textarea[type="text"]::-webkit-input-placeholder {
 }
 
 .error {
-	display: none;
-	margin: -13px 0 12px 17px;
-	color: #000;
+	display: inline-block;
+	margin: -7px 0 10px 0;
+	padding: 6px 13px;
+	/*color: #EB5055;*/
+	background: #303441;
+	border-radius: 6px;
 }
 
 /*Изменение пути к папке со спрайтом*/
@@ -635,4 +641,8 @@ textarea[type="text"]::-webkit-input-placeholder {
 	.fancybox-loading div {
 		background-image: url(../images/vendor/fancyBox/fancybox_loading@2x.gif);
 	}
+}
+
+a{
+    outline:0 !important;
 }

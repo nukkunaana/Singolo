@@ -1,4 +1,6 @@
 $(function() {
+  $(".error").hide();
+
   // при изменении содержания input, в форме обратной связи, запускает валидацию
   $(".name_container input").change(validate.controls.name);
   $(".email_container input").change(validate.controls.email);
@@ -56,12 +58,13 @@ var validate = (function(){
     name: function(){
       var $input = $(this);
       var isValid = true;
-      var $errorNameText = $('.name_container p');
+      var $errorNameText = $('.name_container span');
 
       // Если поле с именем пустое
       if($input.val() == ""){
         $errorNameText.text('Please enter a name.');
         $errorNameText.show();
+        console.log($errorNameText);
         isValid = false;
       }
       else if($input.val().length > 25){
@@ -71,7 +74,7 @@ var validate = (function(){
       }
       else {
         // Valid, remove any existing form error message for this input
-        $('.error').text('').hide();
+        $errorNameText.hide();
       }
 
       return isValid;
@@ -81,7 +84,7 @@ var validate = (function(){
     email: function(){
       var $input = $(this);
       var isValid = true;
-      var $errorEmailText = $('.email_container p');
+      var $errorEmailText = $('.email_container span');
 
       if($input.val() == ""){
         $errorEmailText.text('Please enter an email address.');
@@ -95,7 +98,7 @@ var validate = (function(){
       }
       else{
         // Valid, remove any existing form error message for this input
-        $('.error').hide();
+        $errorEmailText.hide();
       }
         
       return isValid;
@@ -105,7 +108,7 @@ var validate = (function(){
     comment: function(){
       var $input = $(this);
       var isValid = true;
-      var $errorCommentText = $('.comment_container p');
+      var $errorCommentText = $('.comment_container span');
 
       if($input.val() == ""){
         $errorCommentText.text('Please write comment.');
@@ -113,7 +116,7 @@ var validate = (function(){
         isValid = false;
       }
       else{
-        $('.error').hide();
+        $errorCommentText.hide();
       }
           
       return isValid;
