@@ -22,7 +22,6 @@
 
 	<script src="js/vendor/jquery-2.1.0.min.js"></script>
 	<script src="js/vendor/bootstrap.js"></script>
-	<script src="js/vendor/jquery.formError.js"></script>
 	<script src="js/vendor/jquery.fancybox.pack.js"></script>
 	<script src="js/vendor/jquery.fancybox-thumbs.js"></script>
 
@@ -440,18 +439,15 @@
 			<h3>Get a Quote</h3>
 			<p class="txt">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 			<div class="contact_bottom">
-				<div class="valid">
-					
-				</div>
-
 				<div id="fields">
 					<div class="name_container">
-						<input class="btn btn-primary" id="name" data-toggle="tooltip" data-placement="top" placeholder="Name (Required)" type="text">
+						<input id="name" placeholder="Name (Required)" type="text">
 						<span class="error"></span>
 					</div>
 					
 					<div class="email_container">
-						<input class="btn btn-lol" type="email" id="email" placeholder="Email (Required)" name="email" id="txtEmail">
+						<input type="email" id="email" placeholder="Email (Required)" name="email">
+						<!-- id="txtEmail" -->
 						<span class="error"></span>
 					</div>
 
