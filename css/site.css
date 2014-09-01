@@ -294,6 +294,7 @@ h3 {
 	-webkit-transition: all 450ms ease-out 0s;
 			transition: all 450ms ease-out 0s;
 	-webkit-transform: rotateY(180deg) scale(0.5,0.5);
+		-ms-transform: rotateY(180deg) scale(0.5,0.5);
 	        transform: rotateY(180deg) scale(0.5,0.5);
 }
 
@@ -301,6 +302,7 @@ h3 {
 .person_img:hover .hover-wrap {
 	opacity: 1;
 	-webkit-transform: rotateY(0deg) scale(1,1);
+		-ms-transform: rotateY(0deg) scale(1,1);
 	        transform: rotateY(0deg) scale(1,1);
 }
 
@@ -322,13 +324,18 @@ h3 {
 	position: absolute;
 	top: 50%;
 	left: 50%; 
-	margin-top: -16px;
 	margin-left: -16px;
 	color: #FFF;
-	font-size: 32px;
 	line-height: 1px;
 	opacity: 1;
 	font-family: 'latolight'
+}
+
+.icon-magnifying{
+	margin-left: -19px;
+	font-size: 54px;
+	height: 100%;
+	font-family: "mfg_labs_iconsetregular";
 }
 
 .body_img {
@@ -360,7 +367,7 @@ h3 {
 }
 
 .person .overlay-img-thumb {
-	top: 89%;
+	top: 84%;
 	float: right;
 	right: 16%;
 	font-size: 38px;
